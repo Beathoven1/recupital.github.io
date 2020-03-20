@@ -1,0 +1,254 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebedee;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 59.05px;
+    color: white;
+}
+
+.rhomb{
+    background: url('../img/background.png') no-repeat top center;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    height: 15vh;
+}
+
+.contact p{
+    margin: 0;
+}
+
+.btn-contact{
+    color: white;
+    background-color: #1e4f7a;
+    font-weight: 900;
+    padding: 20px 65px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    font-weight: 900;
+    color: #1e4f7a;
+}
+.navbar__link {
+    padding-right: 8px;
+}
+.navbar__items {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.navbar__link-toggle {
+    display: none;
+}
+
+.logo{}
+.navbar__link-brand img{
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media only screen and (min-width: 768px){
+    .navbar__link-brand{display: none}
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar__items,
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar__items {
+        display:none;
+    }
+    .navbar__items--right {
+        margin-left:0;
+    }
+    .navbar__ToggleShow {
+        display: flex;
+    }
+    .navbar__link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+    .logo{display: none}
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.title h1{
+    background-color: #1e4f7a;
+    padding: 45px 405px;
+    z-index: 0;
+    margin: 0;
+}
+
+.plus{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.plus-item {
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+}
+
+.plus-item img {
+    padding-right: 10%;
+}
+
+.num{
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.num-item{
+    text-align: center;
+    width: 15%;
+}
+
+.num-item h1{
+    font-size: 39px;
+    font-weight: 900;
+    color: #1e4f7a;
+    margin: 0;
+}
+
+.num-item p{
+    font-size: 17px;
+    font-weight: 600;
+    color: #1e4f7a;
+    margin: 0;
+}
+
+.offer{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.overlay p{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.footer{
+    margin-top: 20%;
+    background: url('./img/bg_logo.png') no-repeat center;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 65px;
+
+}
+
+.nav-footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+
+}
+
+.nav-footer p{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+hr{
+    margin: 0;
+}
+
+.copyright{
+    margin: 0;
+    color: #b9c8d6;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 13px;
+}
